@@ -1,4 +1,4 @@
-# Cloudfront module for play 2
+# Cloudfront module for play 2.1
 
 Cloudfront enables to set up a CDN easily. This module helps to integrate your Cloudfront CDN with play.
 
@@ -7,13 +7,13 @@ Cloudfront enables to set up a CDN easily. This module helps to integrate your C
 Configure a new resolver:
 
 ```scala
-resolvers += "Mariot Chauvin repository" at "http://mchv.me/repository"
+resolvers += Resolver.url("Markus Jura github repo play2-cloudfront", url("http://markusjura.github.com/play2-cloudfront"))(Resolver.ivyStylePatterns),
 ```
 
 Add the library dependency:
 
 ```scala
-libraryDependencies += "mchv" %% "play2-cloudfront" % "1.0"
+libraryDependencies += "mchv" %% "play2-cloudfront" % "1.1"
 ```
 
 ## Use a custom controller
